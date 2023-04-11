@@ -1,0 +1,101 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #062a4d;
+}
+
+.calculadora{
+    width: 300px;
+    height: 450px;
+    padding: 0px 10px;
+    border-radius: 0px 0px 20px 20px;
+    background-color: rgb(17, 17, 17);
+    color: white;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.425);
+}
+
+.calculadora tbody{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 0px 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border-top: 0.5px solid rgba(255, 255, 255, 0.26);
+}
+
+.calculadora tbody tr{
+    display: flex;
+    gap: 10px;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    padding: 5px;
+    font-size: 1.3em;
+    font-weight: 300;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.btn0{
+    width: 130px;
+}
+
+.btnCaracter{
+    color: rgb(255, 81, 0);
+}
+
+.btn:hover{
+    box-shadow: inset 0px 0px 10px 5px rgba(255, 255, 255, 0.226);
+}
+
+.btnCaracter:hover{
+    box-shadow: inset 0px 0px 10px 5px rgba(245, 51, 3, 0.637);
+}
+
+.resultado{
+    background-color: rgb(255, 81, 0);
+    color: white;
+    border-radius: 50%;
+}
+
+.resultado:hover{
+    transform: translateY(-2px);
+}
+
+.apagarCaracter i{
+    font-weight: 200;
+    font-size: 1.7em;
+}
+
+.telaResultado{
+    background-color: rgb(17, 17, 17);
+    padding: 40px;
+    border-radius: 20px 20px 0px 0px;
+    position: relative;
+    
+}
+
+.telaResultado p{
+    font-size: 1.7em;
+    right: 20px;
+    position: absolute;
+}
+
