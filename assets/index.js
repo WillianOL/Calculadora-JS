@@ -1,24 +1,27 @@
 const todosOsBtns = document.querySelectorAll(".btn");
+const btnsApagar = document.querySelectorAll('.btnApagar')
 const telaResultado = document.querySelector(".telaResultado p");
-let botaoClicado;
 
 function adicionarCaracters(event) {
-    botaoClicado = event.target.innerText;
+    const botaoClicado = event.target.innerText;
 
-    if (
-        botaoClicado == "=" ||
-        botaoClicado == "AC" ||
-        botaoClicado == "backspace"
-    )
-        return;
+    if (botaoClicado == "=" || botaoClicado == "AC" || botaoClicado == "backspace"){
+        apagarCaracters(botaoClicado);
+        return
+    }
 
     telaResultado.innerHTML += botaoClicado;
 }
 
-function apagarCaracter() {
-    const bntApagarTudo = document.querySelector(".btnApagarTudo");
-    const btnApagarCaracter = document.querySelector(".apagarCaracter");
+function apagarCaracters(btn){
+    if(btn == "AC"){
+        telaResultado.innerHTML = ""
+    } else if(btn == "backspace"){
+        
+    }
+
 }
+
 
 todosOsBtns.forEach((btns) => {
     btns.addEventListener("click", adicionarCaracters);
