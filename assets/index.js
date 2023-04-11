@@ -6,8 +6,11 @@ function adicionarCaracters(event) {
 
     if(botaoClicado == "=" || botaoClicado == "AC" || botaoClicado == "backspace") return
 
-    telaResultado.innerHTML += botaoClicado 
+    telaResultado.innerHTML += botaoClicado
+
+    return botaoClicado
 }
+
 
 
 todosOsBtns.forEach((btns) => {
