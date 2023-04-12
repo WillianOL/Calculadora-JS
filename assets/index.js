@@ -14,11 +14,13 @@ function adicionarCaracters(event) {
 }
 
 function apagarCaracters(btn){
+    const totalCaracteres = telaResultado.innerHTML;
     if(btn == "AC"){
         telaResultado.innerHTML = ""
     } else if(btn == "backspace"){
+        const ultimoCaracter = totalCaracteres.slice(-1)
         
-    }
+    };
 
 }
 
