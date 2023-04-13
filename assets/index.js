@@ -19,7 +19,6 @@ function apagarCaracters(btn){
     if(btn == "AC"){
         telaResultado.innerHTML = ""
     } else if(btn == "backspace"){
-        const numeroDeCaracters = arrayCaracters.length
         
     };
 }
