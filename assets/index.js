@@ -26,6 +26,11 @@ function apagarCaracters(btn){
     };
 }
 
+function operacao() {
+    const caracters = telaResultado.innerHTML
+    
+}
+
 
 todosOsBtns.forEach((btns) => {
     btns.addEventListener("click", adicionarCaracters);
