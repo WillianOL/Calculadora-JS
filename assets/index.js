@@ -23,15 +23,14 @@ function apagarCaracters(btn) {
     if (btn == "AC") {
         telaResultado.innerHTML = "";
     } else if (btn == "backspace") {
-        const removeUltimoCaracter = totalCaracters.substring(
-            0,
-            totalCaracters.length - 1
-        );
+        const removeUltimoCaracter = totalCaracters.substring(0, totalCaracters.length - 1);
         telaResultado.innerHTML = removeUltimoCaracter;
     }
 }
 
-function operacao(btn) {}
+function operacao(btn) {
+    
+}
 
 caracterOperacao.forEach((btns) => {
     btns.addEventListener("click", operacao);
