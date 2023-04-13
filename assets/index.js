@@ -14,15 +14,14 @@ function adicionarCaracters(event) {
 }
 
 function apagarCaracters(btn){
-    const totalCaracteres = telaResultado.innerHTML;
+    const totalCaracters = telaResultado.innerHTML
+    const arrayCaracters = Array.from(totalCaracters)
     if(btn == "AC"){
         telaResultado.innerHTML = ""
     } else if(btn == "backspace"){
-        const arrayCaracters = Array.from(totalCaracteres)
-
-        telaResultado.innerHTML = arrayCaracters
+        const numeroDeCaracters = arrayCaracters.length
+        
     };
-
 }
 
 
