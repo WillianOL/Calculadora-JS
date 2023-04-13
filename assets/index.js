@@ -5,8 +5,11 @@ const telaResultado = document.querySelector(".telaResultado p");
 function adicionarCaracters(event) {
     const botaoClicado = event.target.innerText;
 
-    if (botaoClicado == "=" || botaoClicado == "AC" || botaoClicado == "backspace"){
+    if (botaoClicado == "AC" || botaoClicado == "backspace"){
         apagarCaracters(botaoClicado);
+        return
+    } else if(botaoClicado == "="){
+        operacao()
         return
     }
 
@@ -15,11 +18,11 @@ function adicionarCaracters(event) {
 
 function apagarCaracters(btn){
     const totalCaracters = telaResultado.innerHTML
-    const arrayCaracters = Array.from(totalCaracters)
     if(btn == "AC"){
         telaResultado.innerHTML = ""
     } else if(btn == "backspace"){
-        
+        const removeUltimoCaracter = totalCaracters.substring(0, totalCaracters.length - 1)
+        telaResultado.innerHTML = removeUltimoCaracter
     };
 }
 
