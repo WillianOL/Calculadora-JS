@@ -8,7 +8,7 @@ function adicionarCaracters(event) {
     if (
         botaoClicado == "=" ||
         botaoClicado == "AC" ||
-        botaoClicado == "backspace"
+        botaoClicado == "C"
     ) {
         apagarCaracters(botaoClicado);
         return;
@@ -21,7 +21,9 @@ function apagarCaracters(btn) {
     const totalCaracters = telaResultado.innerHTML;
     if (btn == "AC") {
         telaResultado.innerHTML = "";
-    } else if (btn == "backspace") {
+    }
+    
+    if (btn == "C") {
         const removeUltimoCaracter = totalCaracters.substring(0, totalCaracters.length - 1);
         telaResultado.innerHTML = removeUltimoCaracter;
     }
