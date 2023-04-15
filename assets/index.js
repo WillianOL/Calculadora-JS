@@ -5,11 +5,7 @@ const telaResultado = document.querySelector(".telaResultado p");
 function adicionarCaracters(event) {
     const botaoClicado = event.target.innerText;
 
-    if (
-        botaoClicado == "=" ||
-        botaoClicado == "AC" ||
-        botaoClicado == "C"
-    ) {
+    if (botaoClicado == "=" || botaoClicado == "AC" || botaoClicado == "C") {
         apagarCaracters(botaoClicado);
         return;
     }
@@ -22,9 +18,12 @@ function apagarCaracters(btn) {
     if (btn == "AC") {
         telaResultado.innerHTML = "";
     }
-    
+
     if (btn == "C") {
-        const removeUltimoCaracter = totalCaracters.substring(0, totalCaracters.length - 1);
+        const removeUltimoCaracter = totalCaracters.substring(
+            0,
+            totalCaracters.length - 1
+        );
         telaResultado.innerHTML = removeUltimoCaracter;
     }
 }
