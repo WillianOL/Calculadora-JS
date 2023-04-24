@@ -14,7 +14,7 @@ body{
 }
 
 .container{
-    background-color: rgba(0, 0, 0, 0.522);
+    background-color: rgba(0, 0, 0, 0.668);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.319);
     padding: 10px;
     border-radius: 10px;
@@ -49,18 +49,18 @@ body{
 }
 
 .btn:hover{
-    box-shadow: inset 5px 5px 10px 5px rgba(99, 99, 99, 0.307), 5px 5px 10px rgba(0, 0, 0, 0.307);
+    background-color: rgba(255, 255, 255, 0.201);
 }
 
 .specialCaracter{
-    color: rgb(255, 98, 0);
+    background-color: rgb(29, 124, 99);
     font-size: 1.4em;
 }
 
 .specialCaracter:hover{
-    box-shadow: inset 5px 5px 10px 5px rgba(255, 98, 0, 0.49), 5px 5px 10px rgba(0, 0, 0, 0.307);
+    background-color: rgb(26, 163, 127);
 }
 
 .operar{
-    width: 100%;
+    width: 97%;
 }
