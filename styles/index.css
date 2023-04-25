@@ -12,7 +12,7 @@ body {
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background-color: #101626;
+    background-color: #10182f;
 }
 
 body::after {
@@ -23,36 +23,24 @@ body::after {
     border-radius: 50%;
     left: 100px;
     top: 100px;
-    background: linear-gradient(120deg, #f44303, #d20fcf);
+    background: linear-gradient(120deg, #f44303, #d2ae0f);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318);
     border-left: 1px solid rgba(255, 255, 255, 0.525);
     border-top: 1px solid rgba(255, 255, 255, 0.641);
-    animation: bolAnimation 7s ease infinite alternate;
 }
 
 body::before {
     content: " ";
     position: absolute;
-    width: 200px;
-    height: 200px;
+    width: 400px;
+    height: 400px;
     border-radius: 50%;
-    right: 100px;
-    bottom: 100px;
-    background: linear-gradient(120deg, #f44303, #d20fcf);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318);
+    right: -50px;
+    bottom: -50px;
+    background: linear-gradient(120deg, #b33204, #a0850b);
+    box-shadow: -5px -5px 10px rgba(0, 0, 0, 0.388);
     border-left: 1px solid rgba(255, 255, 255, 0.525);
     border-top: 1px solid rgba(255, 255, 255, 0.641);
-    animation: bolAnimation 7s ease infinite alternate;
-}
-
-@keyframes bolAnimation {
-    from {
-        transform: translateY(-50px) rotate(360deg);
-    }
-
-    to {
-        transform: translateY(50px) rotate(0deg);
-    }
 }
 
 .container {
@@ -63,6 +51,8 @@ body::before {
     backdrop-filter: blur(10px);
     position: relative;
     z-index: 1000;
+    border-left: 1px solid rgba(255, 255, 255, 0.449);
+    border-top: 1px solid rgba(255, 255, 255, 0.379);
 }
 
 .container cite {
