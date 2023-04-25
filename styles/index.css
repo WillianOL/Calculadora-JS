@@ -12,7 +12,32 @@ body{
     position: relative;
     height: 100vh;
     overflow: hidden;
-    background: linear-gradient(to top, #101626, #037F8C);
+    background-color: #101626;
+}
+
+body::after{
+    content: " ";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    left: 100px;
+    top: 100px;
+    background: linear-gradient(120deg, #f44303, #d2c20f);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318);
+    border-left: 1px solid rgba(255, 255, 255, 0.525);
+    border-top: 1px solid rgba(255, 255, 255, 0.641);
+    animation: bolAnimation 7s ease infinite alternate;
+}
+
+@keyframes bolAnimation {
+    from {
+        transform: translateY(-50px);
+    }
+
+    to {
+        transform: translateY(50px);
+    }
 }
 
 .container{
@@ -24,20 +49,6 @@ body{
     position: relative;
     z-index: 1000;
 }
-
-.container::after{
-    content: " ";
-    position: absolute;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    top: 10px;
-    background: linear-gradient(150deg, #F25D27, #731702);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318);
-    border-left: 1px solid rgba(255, 255, 255, 0.336);
-    border-top: 1px solid rgba(255, 255, 255, 0.336);
-}
-
 
 .container cite{
     position: absolute;
@@ -102,12 +113,12 @@ body{
 }
 
 .specialCaracter{
-    background-color: rgb(29, 124, 99);
+    background-color: #de5422;
     font-size: 1.4em;
 }
 
 .specialCaracter:hover{
-    background-color: rgb(26, 163, 127);
+    background-color: #8d2a06;
 }
 
 .operar{
