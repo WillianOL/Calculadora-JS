@@ -9,8 +9,10 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
     height: 100vh;
-    background: linear-gradient(to top, #101e30, rgb(44, 52, 103));
+    overflow: hidden;
+    background: linear-gradient(to top, #101626, #037F8C);
 }
 
 .container{
@@ -20,7 +22,22 @@ body{
     border-radius: 10px;
     backdrop-filter: blur(10px);
     position: relative;
+    z-index: 1000;
 }
+
+.container::after{
+    content: " ";
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    top: 10px;
+    background: linear-gradient(150deg, #F25D27, #731702);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318);
+    border-left: 1px solid rgba(255, 255, 255, 0.336);
+    border-top: 1px solid rgba(255, 255, 255, 0.336);
+}
+
 
 .container cite{
     position: absolute;
