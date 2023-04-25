@@ -48,7 +48,7 @@ body{
     border-bottom: 1px solid white;
     overflow-x: scroll;
     overflow-y: hidden;
-    max-width: 260px;
+    max-width: 300px;
 }
 
 .result::-webkit-scrollbar{
@@ -68,10 +68,10 @@ body{
 }
 
 .btn{
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     margin: 2.5px;
-    border-radius: 10px;
+    border-radius: 5px;
     border: 1px solid rgba(255, 255, 255, 0.066);
     cursor: pointer;
     font-size: 1.2em;
