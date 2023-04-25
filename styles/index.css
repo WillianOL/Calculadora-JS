@@ -22,14 +22,15 @@ body{
 }
 
 .result{
-    height: 70px;
-    padding: 20px;
+    height: 80px;
+    padding: 10px;
     margin-bottom: 10px;
     font-size: 2em;
     text-align: right;
     color: white;
     border-bottom: 1px solid white;
     overflow-x: scroll;
+    overflow-y: hidden;
     max-width: 260px;
 }
 
