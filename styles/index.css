@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -15,15 +15,30 @@ body{
     background-color: #101626;
 }
 
-body::after{
+body::after {
+    content: " ";
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    left: 100px;
+    top: 100px;
+    background: linear-gradient(120deg, #f44303, #d20fcf);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318);
+    border-left: 1px solid rgba(255, 255, 255, 0.525);
+    border-top: 1px solid rgba(255, 255, 255, 0.641);
+    animation: bolAnimation 7s ease infinite alternate;
+}
+
+body::before {
     content: " ";
     position: absolute;
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    left: 100px;
-    top: 100px;
-    background: linear-gradient(120deg, #f44303, #d2c20f);
+    right: 100px;
+    bottom: 100px;
+    background: linear-gradient(120deg, #f44303, #d20fcf);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.318);
     border-left: 1px solid rgba(255, 255, 255, 0.525);
     border-top: 1px solid rgba(255, 255, 255, 0.641);
@@ -32,15 +47,15 @@ body::after{
 
 @keyframes bolAnimation {
     from {
-        transform: translateY(-50px);
+        transform: translateY(-50px) rotate(360deg);
     }
 
     to {
-        transform: translateY(50px);
+        transform: translateY(50px) rotate(0deg);
     }
 }
 
-.container{
+.container {
     background-color: rgba(0, 0, 0, 0.668);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.319);
     padding: 10px;
@@ -50,7 +65,7 @@ body::after{
     z-index: 1000;
 }
 
-.container cite{
+.container cite {
     position: absolute;
     color: white;
     font-weight: 300;
@@ -63,10 +78,10 @@ body::after{
     width: 150px;
     text-align: center;
     border-radius: 20px;
-    font-size: .8em;
+    font-size: 0.8em;
 }
 
-.result{
+.result {
     height: 80px;
     padding: 10px;
     margin-bottom: 10px;
@@ -79,23 +94,23 @@ body::after{
     max-width: 300px;
 }
 
-.result::-webkit-scrollbar{
+.result::-webkit-scrollbar {
     margin: 10px;
     height: 10px;
     background-color: transparent;
 }
 
-.result::-webkit-scrollbar-thumb{
+.result::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.241);
     border-radius: 20px;
     cursor: pointer;
 }
 
-.calculatorBtns{
+.calculatorBtns {
     border-collapse: collapse;
 }
 
-.btn{
+.btn {
     width: 70px;
     height: 70px;
     margin: 2.5px;
@@ -105,22 +120,22 @@ body::after{
     font-size: 1.2em;
     background: none;
     color: rgb(232, 224, 224);
-    transition: .3s ease;
+    transition: 0.3s ease;
 }
 
-.btn:hover{
+.btn:hover {
     background-color: rgba(255, 255, 255, 0.201);
 }
 
-.specialCaracter{
+.specialCaracter {
     background-color: #de5422;
     font-size: 1.4em;
 }
 
-.specialCaracter:hover{
+.specialCaracter:hover {
     background-color: #8d2a06;
 }
 
-.operar{
+.operar {
     width: 97%;
 }
