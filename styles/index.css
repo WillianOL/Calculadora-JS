@@ -43,6 +43,15 @@ body::before {
     border-top: 1px solid rgba(255, 255, 255, 0.641);
 }
 
+@media (max-width: 400px){
+    body::before{
+        width: 300px;
+        height: 300px;
+        right: 50px;
+        bottom: 50px;
+    }
+}
+
 .container {
     background-color: rgba(0, 0, 0, 0.668);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.319);
