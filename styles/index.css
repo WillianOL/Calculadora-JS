@@ -34,6 +34,18 @@ body{
     max-width: 260px;
 }
 
+.result::-webkit-scrollbar{
+    margin: 10px;
+    height: 10px;
+    background-color: transparent;
+}
+
+.result::-webkit-scrollbar-thumb{
+    background-color: rgba(255, 255, 255, 0.241);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
 .calculatorBtns{
     border-collapse: collapse;
 }
