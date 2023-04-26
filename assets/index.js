@@ -5,6 +5,12 @@ const operationBtn = document.querySelector(".operar")
 function addCaractersInResult(evento) {
     let caracter = evento.target.innerHTML
 
+    if( caracter == "X" ) {
+        caracter = "*"
+    } else if( caracter == "," ) {
+        caracter = "."
+    }
+
     if( caracter == "AC"){
         clearAllCaracters();
         return
@@ -13,12 +19,6 @@ function addCaractersInResult(evento) {
         return
     } else if( caracter == "=" ) {
         return
-    }
-
-    if( caracter == "X" ) {
-        caracter = "*"
-    } else if( caracter == "," ) {
-        caracter = "."
     }
 
     result.innerHTML += caracter;
@@ -34,6 +34,9 @@ function deletCaracter() {
     result.innerHTML = allCaracters.substring(0, allCaracters.length - 1)
 }
 
+// Função para fazer as operações a partir do botão de igual. Utilizando o método eval()
 operationBtn.addEventListener("click", () => {
-    result.innerHTML = eval(result.innerHTML)
+    if(result.innerHTML != ""){
+        result.innerHTML = eval(result.innerHTML)
+    }
 })
