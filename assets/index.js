@@ -2,8 +2,8 @@ const result = document.querySelector(".result")
 const calculatorBtns = document.querySelectorAll(".btn")
 const operationBtn = document.querySelector(".operar")
 
-function addCaractersInResult(evento) {
-    let caracter = evento.target.innerHTML
+function addCaractersInResult(button) {
+    let caracter = button.target.innerHTML
 
     if( caracter == "X" ) {
         caracter = "*"
