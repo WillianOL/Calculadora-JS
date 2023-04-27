@@ -4,7 +4,7 @@ const operationBtn = document.querySelector(".operar")
 
 function addCaractersInResult(button) {
     let caracter = button.target.innerHTML
-
+    
     if( caracter == "X" ) {
         caracter = "*"
     } else if( caracter == "," ) {
