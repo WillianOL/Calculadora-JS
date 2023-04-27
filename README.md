@@ -46,3 +46,51 @@
 ◻<a href="https://willianol.github.io/Calculadora-JS/assets/index.html">Calculadora JavaScript</a>
 
 #
+
+### <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> JavaScript
+
+#### Elementos de construção
+<div>
+	<p>Logo ao inicio do código, foram criadas 3 constantes para selecionar os elementos importamtes para a construção da aplicação. Que são:</p>
+	<ul>
+		<li><strong>result</strong> - Seleciona a div onde serão colocados os digitos e os resultados;</li>
+		<li><strong>calculatorBtns</strong> - Seleciona todos os botões da calculadora;</li>
+		<li><strong>operationBtn</strong> - Seleciona especificamente o botão para realizar as operações(=);</li>
+	</ul>
+</div>
+	
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/234850084-825f711f-db35-43a5-a80e-479d7879f5d6.png" width="700px">
+</div>
+
+&nbsp;
+&nbsp;
+
+#### Exibindo caracteres clicados
+	
+<div>
+	<p>Cada botão da calculadora tem a classe <strong>"btn"</strong>, através disso foram armazenados na constante <strong>calculatorBtns.</strong> Com o método forEach, foi adicionada a função <strong>"addCaractersInResult"</strong> com evento de click a cada botão, assim a função será disparada a cada vez que qualquer botão for clicado.</p>
+</div>
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/234861465-03eb5025-8168-4000-89b3-b57ae110b7b3.png" width="700px">
+</div>
+
+&nbsp;
+
+<div>
+	<p>Na função, foi passado o parâmetro "button". Logo após, foi criado a vareável "caracter" do tipo let que está armazenando o parâmetro button com o  ".target", para armazenar exatamente qual botão está sendo clicado, retornando a tag button com suas classes. E para pegar o caracter de cada botão, foi usado o ".innerHTML".</p>
+</div>
+	
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/234867806-47491e14-f3dc-406c-9f49-59e66e7cddb8.png" width="700px">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/234868939-0b78ffa3-c4f1-4e3c-844e-c0b7c8a95afb.png" width="700px">
+</div>
+
+
+
+	
+	
+	
+	
+	
+	
