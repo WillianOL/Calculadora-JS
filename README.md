@@ -86,6 +86,29 @@
 	<img align="center" src="https://user-images.githubusercontent.com/112639055/234868939-0b78ffa3-c4f1-4e3c-844e-c0b7c8a95afb.png" width="700px">
 </div>
 
+&nbsp;
+
+<div>
+	<p>Logo após, foi criada uma estrutura condicional "if" para fazer algumas alterações. Tais alterações são: Trocar "X" por "*" e a virgúla(,) por ponto(.). Isso porque com "X" e "," não é possivel realizar as operações, sendo nescessário alterar seus valores para fazelas.</p>
+	<p>Sendo assim, na estrutura foi usada a seguinte lógica: Se o botão clicado(armazenado na vareável "caracter") for X, a vareável recebe "*". Se for "," armazene ".".<p>	
+</div>
+
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235013039-e2e42d4d-0096-4673-a36c-e53d4f11b12b.png" width="700px">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	
