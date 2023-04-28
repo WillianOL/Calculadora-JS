@@ -34,9 +34,9 @@ function deletCaracter() {
     result.innerHTML = allCaracters.substring(0, allCaracters.length - 1)
 }
 
-// Função para fazer as operações a partir do botão de igual. Utilizando o método eval()
-operationBtn.addEventListener("click", () => {
+function operationResult() {
     if(result.innerHTML != ""){
         result.innerHTML = eval(result.innerHTML)
-    }
-})
+    }    
+}
+operationBtn.addEventListener("click", operationResult)
