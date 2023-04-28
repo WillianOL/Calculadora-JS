@@ -78,7 +78,7 @@
 &nbsp;
 
 <div>
-	<p>Na função, foi passado o parâmetro "button". Logo após, foi criado a vareável "caracter" do tipo let que está armazenando o parâmetro button com o  ".target", para armazenar exatamente qual botão está sendo clicado, retornando a tag button com suas classes. E para pegar o caracter de cada botão, foi usado o ".innerHTML".</p>
+	<p>Na função, foi passado o parâmetro <strong>"button"</strong>. Logo após, foi criado a vareável <strong>"caracter"</strong> do tipo let que está armazenando o parâmetro button com o  <strong>".target"</strong>, para <strong>armazenar exatamente qual botão está sendo clicado</strong>, retornando a tag button com suas classes. E para pegar o caracter de cada botão, foi usado o <strong>".innerHTML".</strong></p>
 </div>
 	
 <div align="center">
@@ -89,17 +89,26 @@
 &nbsp;
 
 <div>
-	<p>Logo após, foi criada uma estrutura condicional "if" para fazer algumas alterações. Tais alterações são: Trocar "X" por "*" e a virgúla(,) por ponto(.). Isso porque com "X" e "," não é possivel realizar as operações, sendo nescessário alterar seus valores para fazelas.</p>
-	<p>Sendo assim, na estrutura foi usada a seguinte lógica: Se o botão clicado(armazenado na vareável "caracter") for X, a vareável recebe "*". Se for "," armazene ".".<p>	
+	<p>Logo após, foi criada uma estrutura condicional "if" para fazer algumas alterações. Tais alterações são: <strong>Trocar "X" por "*" e a virgúla(,) por ponto(.).</strong> Isso porque com "X" e "," não é possivel realizar as operações, sendo nescessário <strong>alterar seus valores para fazelas.</strong></p>
+	<p>Sendo assim, na estrutura foi usada a seguinte lógica: Se o botão clicado(armazenado na vareável "caracter") for X, a vareável recebe "*". Se for "," armazene ".";<p>	
 </div>
 
 <div align="center">
 	<img align="center" src="https://user-images.githubusercontent.com/112639055/235013039-e2e42d4d-0096-4673-a36c-e53d4f11b12b.png" width="700px">
 </div>
 
+&nbsp;
 
+<div>
+	<p>Ainda na função, antes de colocar os caracteres na tela da calculadora. É feita algumas verificações com a estrutura condicional para a execução de algumas funções expecíficas da calculadora, que são: Apagar todos os caracteres, apagar o último caracter digitado e executar as operações.</p>
+	<p>Foi feita da seguinte maneira: Se o caracter for AC, vai executar a função "clearAllCaracters()". Se o caracter for C, vai executar a função "deletCaracter()" e se for o sinal de "=" vai apenas dar o return; Todas elas tem o return para não colocar os caracteres na tela da calculadora, encerrando a função de colocar os digitos e executando a função do caracter.<p>
+	<p>Se o botão clicado não estiver relacionado com as condições acima, vai exibilo na tela da calculadora.</p>
+</div>
 
-
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235016398-dd7499e7-7e40-49f9-8276-c56368ab9bec.png" width="700px">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235016410-2ce12cb6-1275-4f35-82ea-13830d051ea1.png" width="700px">
+</div>
 
 
 
