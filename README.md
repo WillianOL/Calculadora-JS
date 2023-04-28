@@ -45,28 +45,27 @@
 
 ◻<a href="https://willianol.github.io/Calculadora-JS/assets/index.html">Calculadora JavaScript</a>
 
-#
 
-### <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> JavaScript
+## <img align="center" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-plain.svg"> JavaScript
 
-#### Elementos de construção
+### Elementos de construção
 <div>
-	<p>Logo ao inicio do código, foram criadas 3 constantes para selecionar os elementos importamtes para a construção da aplicação. Que são:</p>
+	<p>Logo ao inicio do código, foram criadas 2 constantes para selecionar os elementos importamtes para a construção da aplicação. Que são:</p>
 	<ul>
 		<li><strong>result</strong> - Seleciona a div onde serão colocados os digitos e os resultados;</li>
 		<li><strong>calculatorBtns</strong> - Seleciona todos os botões da calculadora;</li>
-		<li><strong>operationBtn</strong> - Seleciona especificamente o botão para realizar as operações(=);</li>
 	</ul>
 </div>
 	
 <div align="center">
-	<img align="center" src="https://user-images.githubusercontent.com/112639055/234850084-825f711f-db35-43a5-a80e-479d7879f5d6.png" width="700px">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235151569-7bdae58a-0584-4e18-b78b-63d25d10ec40.png" width="700px">
 </div>
 
+
 &nbsp;
 &nbsp;
 
-#### Exibindo caracteres clicados
+### Exibindo caracteres clicados
 	
 <div>
 	<p>Cada botão da calculadora tem a classe <strong>"btn"</strong>, através disso foram armazenados na constante <strong>calculatorBtns.</strong> Com o método forEach, foi adicionada a função <strong>"addCaractersInResult"</strong> com evento de click a cada botão, assim a função será disparada a cada vez que qualquer botão for clicado.</p>
@@ -113,22 +112,52 @@
 &nbsp;
 &nbsp;
 
-#### Funções da calculadora
+### Funções da calculadora
+#### Apagar todos os caracteres
 
 <div>
-	<p>Para fazer a função onde se apaga todo o conteúdo digitado na calculadora, é bem simples. Ao clicar no botão "AC" é disparada a função "clearAllCaracters()", que nela atribui-se um valor a vareável result(tela onde fica os digitos) com o .innerHTML como "vazio". Limpando assim os digitos da calculadora.</p>
+	<p>Para fazer a função onde se apaga todo o conteúdo digitado na calculadora, é bem simples. Ao clicar no botão <strong>"AC" é disparada a função "clearAllCaracters()"</strong>, que nela atribui-se um valor a vareável result(tela onde fica os digitos) <strong>com o .innerHTML como "vazio"</strong>. Limpando assim os digitos da calculadora.</p>
 </div>
 
 <div align="center">
-	<img align="center" src="https://user-images.githubusercontent.com/112639055/235141294-bfe3aa0c-9928-48f0-a9b4-c0acae6a955b.png" width="700px">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235141566-1ead7784-dad8-4da6-9171-9136f1c190b5.png" width="700px">
+</div>
+
+&nbsp;
+
+#### Apagar último caracter clicado
+
+<div>
+	<p>Para apagar o ultimo caracter foi criada a função <strong>"deletCaracter()", que será disparada ao clicar no botão C</strong>. Na função, foi deifnida a constante <strong>"allCaracters" que armazena todos os caracteres</strong>. Depois, com o "result.innerHTML" foi definido o que apareceria na tela, onde recebe o <strong>total de caracteres(allCaracters) com o método "subString"</strong>. O método consistem em pegar parte de uma string baseada em seu indicie inicial e final, usando a seguinte lógica: Apartir do index 0, e até o total de letras do allCaracter(.length) com -1, fazendo com que se exclua o ultimo caracter.</p>
+</div>
+
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235147051-f712e8ef-4fdc-4e8d-bdb8-6ffdbd82f8d4.png" width="700px">
+</div>
+
+&nbsp;
+
+#### Realizar as operações
+
+<div>
+	<p>Ao clicar no botão de igual(=) é disparada a função "doOperation()", que será responsável por realizar as operações. Na função, foi usada uma estrutura condicional if para verificar se há algo digitado na calculadora, se não tiver algo digitado, não executa a função. Apartir dai é simples, usando o método "eval()" vai executar a operação apartir de uma string, que no caso é os números digitados.</p>
+</div>
+
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235153981-22698e9c-2401-4a2b-a695-1da40ffb5a43.png" width="700px">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235154439-60e71118-aa73-410c-a358-6e53c9de2cae.jpeg" width="700px">
 </div>
 
 
 
 
-	
-	
-	
-	
-	
-	
+
+
+
+
+
+
+
+
+
+
