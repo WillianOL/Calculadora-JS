@@ -1,6 +1,5 @@
 const result = document.querySelector(".result")
 const calculatorBtns = document.querySelectorAll(".btn")
-const operationBtn = document.querySelector(".operar")
 
 function addCaractersInResult(button) {
     let caracter = button.target.innerHTML
@@ -40,4 +39,3 @@ function doOperation() {
         result.innerHTML = eval(result.innerHTML)
     }    
 }
-operationBtn.addEventListener("click", doOperation)
