@@ -100,13 +100,13 @@
 &nbsp;
 
 <div>
-	<p>Ainda na função, antes de colocar os caracteres na tela da calculadora. É feita algumas verificações com a estrutura condicional para a execução de algumas funções expecíficas da calculadora, que são: Apagar todos os caracteres, apagar o último caracter digitado e executar as operações.</p>
-	<p>Foi feita da seguinte maneira: Se o caracter for AC, vai executar a função "clearAllCaracters()". Se o caracter for C, vai executar a função "deletCaracter()" e se for o sinal de "=" vai apenas dar o return; Todas elas tem o return para não colocar os caracteres na tela da calculadora, encerrando a função de colocar os digitos e executando a função do caracter.<p>
+	<p>Ainda na função, antes de colocar os caracteres na tela da calculadora. É feita algumas verificações com a estrutura condicional para a execução de algumas funções expecíficas da calculadora, que são: <strong>Apagar todos os caracteres</strong>, <strong>apagar o último caracter digitado</strong> e <strong>executar as operações.</strong></p>
+	<p>Foi feita da seguinte maneira: Se o caracter for <strong>AC, vai executar a função "clearAllCaracters()"</strong>. Se o caracter for <strong>C, vai executar a função "deletCaracter()"</strong> e se for o sinal de <strong>"=" vai executar a função "doOperation()"</strong>; Todas elas tem o return para não colocar os caracteres na tela da calculadora, encerrando a função de colocar os digitos e executando a função do caracter.<p>
 	<p>Se o botão clicado não estiver relacionado com as condições acima, vai exibilo na tela da calculadora.</p>
 </div>
 
 <div align="center">
-	<img align="center" src="https://user-images.githubusercontent.com/112639055/235016398-dd7499e7-7e40-49f9-8276-c56368ab9bec.png" width="700px">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235022172-e41018b8-dfb5-4038-b06f-09573315a734.png" width="700px">
 	<img align="center" src="https://user-images.githubusercontent.com/112639055/235016410-2ce12cb6-1275-4f35-82ea-13830d051ea1.png" width="700px">
 </div>
 
