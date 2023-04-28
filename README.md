@@ -110,12 +110,18 @@
 	<img align="center" src="https://user-images.githubusercontent.com/112639055/235016410-2ce12cb6-1275-4f35-82ea-13830d051ea1.png" width="700px">
 </div>
 
+&nbsp;
+&nbsp;
 
+#### Funções da calculadora
 
+<div>
+	<p>Para fazer a função onde se apaga todo o conteúdo digitado na calculadora, é bem simples. Ao clicar no botão "AC" é disparada a função "clearAllCaracters()", que nela atribui-se um valor a vareável result(tela onde fica os digitos) com o .innerHTML como "vazio". Limpando assim os digitos da calculadora.</p>
+</div>
 
-
-
-
+<div align="center">
+	<img align="center" src="https://user-images.githubusercontent.com/112639055/235141294-bfe3aa0c-9928-48f0-a9b4-c0acae6a955b.png" width="700px">
+</div>
 
 
 
