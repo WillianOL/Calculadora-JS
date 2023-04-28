@@ -140,7 +140,7 @@
 #### Realizar as operações
 
 <div>
-	<p>Ao clicar no botão de igual(=) é disparada a função "doOperation()", que será responsável por realizar as operações. Na função, foi usada uma estrutura condicional if para verificar se há algo digitado na calculadora, se não tiver algo digitado, não executa a função. Apartir dai é simples, usando o método "eval()" vai executar a operação apartir de uma string, que no caso é os números digitados.</p>
+	<p>Ao clicar no botão de <strong>igual(=) é disparada a função "doOperation()"</strong>, que será responsável por realizar as operações. Na função, foi usada uma estrutura condicional if para <strong>verificar se há algo digitado na calculadora</strong>, se não tiver algo digitado, não executa a função. Apartir dai é simples, usando o método <strong>"eval()"</strong> vai executar a operação apartir de uma string, que no caso são os números digitados.</p>
 </div>
 
 <div align="center">
