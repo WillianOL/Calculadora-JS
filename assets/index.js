@@ -31,7 +31,7 @@ function clearAllCaracters() {
 }
 
 function deletCaracter() {
-    let allCaracters = result.innerHTML
+    const allCaracters = result.innerHTML
     result.innerHTML = allCaracters.substring(0, allCaracters.length - 1)
 }
 
