@@ -18,6 +18,7 @@ function addCaractersInResult(button) {
         deletCaracter();
         return
     } else if( caracter == "=" ) {
+        doOperation();
         return
     }
 
@@ -34,9 +35,9 @@ function deletCaracter() {
     result.innerHTML = allCaracters.substring(0, allCaracters.length - 1)
 }
 
-function operationResult() {
+function doOperation() {
     if(result.innerHTML != ""){
         result.innerHTML = eval(result.innerHTML)
     }    
 }
-operationBtn.addEventListener("click", operationResult)
+operationBtn.addEventListener("click", doOperation)
